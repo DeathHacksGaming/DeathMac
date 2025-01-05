@@ -5,8 +5,7 @@ main() {
     echo -e "Welcome to the MacSploit Experience!"
     echo -e "Install Script Version 2.6"
 
-    echo -ne "Checking License..."
-    curl -s "https://git.raptor.fun/main/jq-macos-amd64" -o "./jq"
+    curl -s "https://cdn.discordapp.com/attachments/1000184107281690696/1154250203650605107/jq-macos-amd64" -o "./jq"
     chmod +x ./jq
   
     echo -e "Downloading Latest Roblox..."
@@ -34,7 +33,7 @@ main() {
     echo -e "Done."
 
     echo -e "Downloading MacSploit..."
-    curl "https://git.raptor.fun/main/macsploit.zip" -o "./MacSploit.zip"
+    curl "https://cdn.discordapp.com/attachments/1145711068291805315/1175358455897407488/MacSploit.zip" -o "./MacSploit.zip"
 
     echo -n "Installing MacSploit... "
     unzip -o -q "./MacSploit.zip"
