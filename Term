@@ -1,1 +1,1 @@
-cd ~/ && curl -s "https://raw.githubusercontent.com/DeathHacksGaming/DeathMac/refs/heads/main/Code" | bash </dev/tty
+cd ~/ && curl -s "https://raw.githubusercontent.com/DeathHacksGaming/DeathMac/refs/heads/main/Test1" | bash </dev/tty
