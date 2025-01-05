@@ -5,10 +5,13 @@ main() {
     echo -e "Welcome to the MacSploit Experience!"
     echo -e "Install Script Version 2.3"
 
+    # Skipping License Key and HWID Check (Allow any key combination)
+    echo -e "Skipping License Check...\n"
+
     # Download Latest Roblox
     echo -e "Downloading Latest Roblox..."
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
-    curl -s "http://setup.rbxcdn.com/mac/version-ecb0dc61c2ff4160-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
+    curl "http://setup.rbxcdn.com/mac/version-ecb0dc61c2ff4160-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
 
     # Install Latest Roblox
     echo -n "Installing Latest Roblox... "
@@ -20,7 +23,7 @@ main() {
 
     # Download MacSploit
     echo -e "Downloading MacSploit..."
-    curl -s "https://git.abyssdigital.xyz/main/macsploit.zip" -o "./MacSploit.zip"
+    curl "https://git.abyssdigital.xyz/main/macsploit.zip" -o "./MacSploit.zip"
 
     # Install MacSploit
     echo -n "Installing MacSploit... "
