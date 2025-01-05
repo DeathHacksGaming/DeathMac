@@ -8,11 +8,6 @@ main() {
     echo -ne "Checking License..."
     curl -s "https://git.raptor.fun/main/jq-macos-amd64" -o "./jq"
     chmod +x ./jq
-    
-    local user_hwid=$(./hwid)
-    local hwid_info=$(curl -s "https://git.raptor.fun/api/whitelist?hwid=$user_hwid")
-    local hwid_resp=$(echo $hwid_info | ./jq -r ".success")
-    rm ./hwid
   
     echo -e "Downloading Latest Roblox..."
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
